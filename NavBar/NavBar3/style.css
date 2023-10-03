@@ -1,0 +1,61 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NCAgICA0HBwcHCA8ICQcNFREWFhURExMYHSggGBolGxUTITEhMSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRkrKzctLSsrKy03LTcrNzctLSsrKy0tLSsrLSsrLSsrKy0tLSsrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQADAQAAAAAAAAAAAAABAAIDBQYE/8QAFxABAQEBAAAAAAAAAAAAAAAAAAEREv/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgMEBQb/xAAYEQEBAQEBAAAAAAAAAAAAAAAAEQESAv/aAAwDAQACEQMRAD8A8Egn3H50oIaUkGUqlQzpVCAIrNNZrLWKs01mhrBWaazQ3jNZrVZqbxis1qs1NYKzTWU3irJoqaxkGihoUGhHAkhrpiSUDZSQKSST0YGp7nwitCGohaNZRC0VnSqFoBirNVotGtYKzTWay1grNNZobwVmms1NYKxWqym8DNarKawVmmiprBQayGhUqE1iQIaxAoOiLKSKCBei1M6de58OHVrOrRphTK1lQjRo1kw2i0aAYbWbUyGsw6zaqzRGsxVmms2hrBazVaA3grNNrKaxVk1mprFRSyGsFBCIoNCaCSDWJJBrNSSTRAST0C1la9r48OrWdWs6o1o1nVoMOgaLWVCtZ1aGorQNWgxWs2q1kNZirNptZoazBRVazaGsVZprKaxUKhNKs00VNYAQiKDRQUkKCiEmkUg2EsSTu9Ws6teqvlRrRrOrUo1o0aNZMa0aNGhQ2jVo0GLRaNGpqG0Wi0WimK1m06zQ1mK1mq0UNYqEKmkEKiqzVUimTQigaAQqQCkkikkG8IVSLttWs6teivmxrVrOjVVGtWs6tCjWi1nVoph0aNGimHVrOq0GLRoGom0UWihpUIIoFlNKiqhFBJFAgFUJIhUgJFJNQFINhEJOx1dMatdq8Eb1axq0VRvRrOrVVGtGjQKY1oFAMatAWpRWhaKjENQRVQSIBCaVBGIhHFgMZRxYjAGsAMCOLE1mBHCGoMWFIxAoKPp1azq10rxRrVrK0VRrVrKSjWrWdWpRrRrOpGG1aAUQkDEklWswLDhxVrPDGHGsWCt54ZwY3iwVvPLGLG8WKnljBjkwYqeWMGOTBgq5YxN4KjyzhwpGDFiQUSSJjegatLwwrWdKqOrQko0tZJR1BJQpYkcxFYYq3nlYiRXTPLOHGkK3nlnDhxYq3nkJrFgrWeWMWN4sVPLGDG8WCnlx4sbsGKjljFjeDFVyxixsKrlnFjWLCoziawCqOPUyTXgh1aNWqqEs6TUdWjSVCYCqcwmAwV0zyTERW8xYjDgrpmCQkxVvPIw4TjNdM8s4saxKtZ5ZxY3gwVrlnBjeDEuWLBjeBURkY3gsNEYxY1YMQjOJqhCBFJR8ySL5qSSRQJRMZhRzGoRCq3mGNRmNRV0zDIQYG8wtQQh0zDCo1A6ZgxpQwOmYsWFYm88jFThwNcsixqwWEcs4zY2kNxx2BuwUs7jCITMGLCkIziKSj40k0+WUkgkkUYYkm8LRQbwxqBBvC1Ek3jUMSDrjUMSTpjUJQdcUhxIN4cWBBpWCpFaLGakmQLEizorNKLGspJMpJJP/2Q=='); /* Replace 'background.jpg' with your image file's path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif; 
+    color: white; 
+    min-height: 100vh;
+}
+
+
+.nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5); 
+    list-style: none;
+    padding: 0;
+    border-radius: 5px; 
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white; 
+    padding: 10px 20px;
+    transition: color 0.3s, background-color 0.3s; 
+}
+
+
+.nav-item:hover {
+    color: white; 
+    background-color: var(--hover-color); 
+}
+
+.nav-indicator {
+    width: 3px; 
+    background-color: var(--active-color); 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: left 0.3s; 
+}
+
+.nav-item.is-active {
+    color: var(--active-color); 
+    background-color: var(--hover-color); 
+}
+
+:root {
+    --hover-color: blue; 
+    --active-color: orange; 
+}
